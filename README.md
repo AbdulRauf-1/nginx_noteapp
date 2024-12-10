@@ -39,6 +39,13 @@ npm install
 npm start
 ```
 
+## Nginx
+
+Install Nginx reverse proxy to make this application available
+
+`sudo apt-get update`
+`sudo apt install nginx` 
+
 ## Make a Dockerfile
 Build the app
 ```
@@ -71,14 +78,5 @@ systemctl restart nginx
 Now, to fetch our frontend. Go to mynotes/build, copy all files folder in build to /var/www/html
 
 
-## Nginx
-
-Install Nginx reverse proxy to make this application available
-
-`sudo apt-get update`
-`sudo apt install nginx` 
 
 
-## Deployment
-App is deployed on Railway: [Notes App](https://notesapp-production-8c87.up.railway.app/)  
-Refer this article on how to: [deploy a django app on Railway](https://dev.to/osahenru/using-railway-app-to-deploy-your-django-project-3ah1)
